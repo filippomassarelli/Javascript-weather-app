@@ -24,8 +24,6 @@ document.getElementById("feelings").addEventListener("keyup", function (e) {
 // Handle Event
 // using chained promises we respond to the user search by fetching data from the openweather api, storing it to server, and using it to update the user interface
 
-// Create a new date instance dynamically with JS
-
 function handleClick(e) {
   const userCity =
     document.getElementById("city").value === ""
@@ -50,6 +48,7 @@ function handleClick(e) {
 // Define helper functions
 
 //1. Fetch weather data from API
+
 const baseUrl = "https://api.openweathermap.org/data/2.5/weather?q=";
 const units = "&units=metric";
 // const apiKey = "&appid=" + process.env.API_KEY;

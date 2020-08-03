@@ -62,36 +62,3 @@ app.get("/projectData", getData);
 function getData(req, res) {
   res.status(200).send(projectData);
 }
-
-// API calls
-//in order to ensure API keys are kept stored as enviroment variables we need to run this server side (because dotenv is a node package)
-
-// const baseUrl = "https://api.openweathermap.org/data/2.5/weather?q=";
-// const units = "&units=metric";
-// const apiKey = "&appid=" + process.env.API_KEY;
-
-// const getWeather = async (baseUrl, units, key, city) => {
-//   const response = await fetch(baseUrl + city + key + units);
-
-//   try {
-//     const data = await response.json();
-//     console.log("getWeather successful", data);
-//     return data;
-//   } catch (error) {
-//     console.log("error", error);
-//   }
-// };
-
-// POST route for API call
-
-// app.get("/api", (req, res) => {
-//   console.log("hey ", req.body);
-
-//   const city = req.body;
-//   const data = getWeather(baseUrl, units, apiKey, city);
-//   console.log(
-//     "back end is communicating with client after successful api call",
-//     data
-//   );
-//   res.send(data);
-// }
