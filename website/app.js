@@ -132,6 +132,6 @@ const updateUI = async () => {
   }
 };
 
-// window.onload = () => {
-//   document.getElementById("generate").click();
-// };
+window.onload = () => {
+  document.getElementById("generate").click();
+};
