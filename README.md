@@ -1,5 +1,5 @@
 ---
-permalink: index.html
+permalink: /website/index.html
 ---
 
 # Weather Journal Project
